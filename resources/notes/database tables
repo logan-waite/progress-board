@@ -1,0 +1,49 @@
+---
+Main Tables
+--
+
+** clients **
+
+id - name - phone_number - address - email
+
+** entries **
+
+id - date - start_time - end_time - cp_id
+
+** projects **
+
+id - name - description - pay_rate
+
+** invoices **
+
+id - client_id - billed_date - amount - status_id
+
+** notes **
+
+id - title - content - date_submitted
+
+** payment_statuses **
+
+id - status
+
+** users **
+
+--
+Relation Tables
+--
+
+** client_project **
+
+id - client_id - project_id
+
+** entry_note **
+
+id - entry_id - note_id
+
+** invoice_entry **
+
+id - invoice_id - entry_id
+
+** payments **
+
+id - invoice_id - amount_paid

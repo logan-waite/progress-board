@@ -1,0 +1,112 @@
+
+body {
+    background-color: #fcfcfc; /*ghostwhite = #f8f8ff, mintcream = #f5fffa*/
+}
+header {
+    text-align: center;
+    border-bottom: 1px solid #DADADA;
+    width: 100%;
+    font-family: fantasy, sans-serif;
+    margin-bottom: 5%;
+}
+
+.sub {
+    position: relative;
+    width: 100%;
+    border-top: 1px solid #DADADA;
+    margin: 0px;
+    padding-top: 12px;
+    padding-bottom: 6px;
+    font-size: 24px;
+    margin-bottom: 5px;
+
+}
+
+.main-header {
+    position: absolute;
+    top: 50px;
+    left: -50%;
+    margin-left: 50%;
+}
+.interior {
+    position: absolute;
+    width: 76%;
+    height: 100%;
+    top: 125px;
+    left: 50%;
+    margin-left: -38%;
+    padding: 10px;
+}
+
+#alert-box {
+    float:right;
+    margin: -10px 25px;
+}
+
+/*****
+    Board CSS
+******/
+
+.wrapper {
+    border: 1px solid black;
+    width: 25%;
+    float: left;
+    height: 75%;
+    text-align: center;
+}
+
+#board {
+
+}
+
+#waiting {
+
+}
+
+#working {
+
+}
+
+#queue {
+
+}
+
+#finished {
+
+}
+
+.project {
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px #888;
+    display: inline-block;
+    border: 1px solid #CCC;
+    background: linear-gradient(#ECECEC, #CACACA);
+    width: 85%;
+    height: 50px;
+    font-size: 16px;
+}
+
+.project:active {
+    box-shadow: 5px 5px 5px #888;
+}
+
+.project div {
+    border-top: 1px solid #AAA;
+    width: 100%;
+}
+
+.project p {
+    margin: 5px;
+}
+
+.caret {
+    margin: 5px 25px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
