@@ -60,7 +60,7 @@ header {
 }
 
 #waiting {
-
+    height: 100%;
 }
 
 #working {
@@ -90,23 +90,18 @@ header {
     box-shadow: 5px 5px 5px #888;
 }
 
-.project div {
-    border-top: 1px solid #AAA;
-    width: 100%;
+.list-group-item {
+    text-align: left;
 }
 
-.project p {
-    margin: 5px;
+.list-group-item i {
+    padding: 0px 10px;
 }
 
-.caret {
-    margin: 5px 25px;
+.btn i {
+    padding: 0px;
 }
-
-.left {
-    float: left;
-}
-
-.right {
-    float: right;
+.project-options {
+    text-align: right;
+    padding: 2px;
 }

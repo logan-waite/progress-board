@@ -11,14 +11,6 @@
         $user = $_SESSION['user'];
     }
 
-    $page = trim(substr($title, 0));
-    $sb_active = "";
-
-    if ($page === "SCRUM Board")
-    {
-        $sb_active = "class='active'";
-    }
-
 ?>
 <html>
     <head>
@@ -51,14 +43,12 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Progress Board</a>
+                    <a class="navbar-brand" href="#">SCRUM Board</a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li id='board' <?=$sb_active?>><a href="board.php">SCRUM Board</a></li>
-                    </ul>
+                    <button type='button' class='btn btn-primary navbar-btn'>Add Project</button>
                     <ul class="nav navbar-nav navbar-right">
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?=$user?><span class="caret"></span></a>
